@@ -1,5 +1,6 @@
 const { verifyToken } = require('../config/jwt');
 
+
 const authMiddleware = (req, res, next) => {
   const authHeader = req.headers.authorization;
   if (authHeader) {
